@@ -1,4 +1,6 @@
 const {MongoClient, ObjectID}  = require('mongodb');
+// Para arrancar Mongo ir al directorio bin y ejecutar:
+// ./mongod --dbpath ../mongo-data
 
 MongoClient.connect('mongodb://localhost:27017/TodoApp',(err, db) => {
   if (err){
